@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Promocja</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<header class="header-content">
+				<div class="top">
+					<p class="top__slogan"><span class="text__bold text__large">Easy speaker</span> - lorem ipsum dolor sit amet consectetur</p>
+				</div>
+				<div class="top__progress">
+					<div class="top__progress__step visibility">
+						<p class="circle circle-complete">&#10004;</p>
+						<p class="text__bold text__regular">Step 1</p>
+						<p class="circle__text text__mini">Informacja o produkcie</p>
+					</div>
+					<div class="top__progress__line visibility"></div>
+					<div class="top__progress__step">
+						<p class="circle circle-complete">2</p> 
+						<p class="text__bold text__regular">Step 2</p>
+						<p class="circle__text text__mini">Zamówienie</p>
+					</div>
+					<div class="top__progress__line visibility"></div>
+					<div class="top__progress__step visibility">
+						<p class="circle">3</p> 
+						<p class="text__bold">Step 3</p>
+						<p class="circle__text text__mini">Lorem ipsum dolor</p>
+					</div>
+				</div>
+			</header>
+			<main>
+				<div class="form">
+					<div class="form__introduction">
+						<p class="text__regular">Lorem ipsum dolor <span class="text__bold">sit amet</span>, consectetur adipisicing elit <span class="text__bold">Easy speaker</span></p>
+						<p class="text__regular text__small">Lorem ipsum dolor <span class="text__blue">sit amet</span>, consectetur adipisicing elit <span class="text__blue">Easy speaker</span></p>
+
+					</div>
+					<div class="form__prescription">
+						<p class="text__regular text__bold text__blue">Wypełnij poniższy formularz:</p>
+						<p class="text__small text__gray">Pola zaznaczone * są wymagane</p>
+					</div>
+					<form name="txform" action="#" class="form__component" method="post" onsubmit="return submitForm();">
+						<div class="form__element">
+							<label for="firstname" class="form__element__label form__element__label-block">Imię:*</label>
+							<input id="firstname" type="text" class="form__element__input" required>
+						</div>
+						<div class="form__element">
+							<label for="lastname" class="form__element__label form__element__label-block">Nazwisko:*</label>
+							<input id="lastname" type="text" class="form__element__input" required>
+						</div>
+						<div class="form__element">
+							<label for="address" class="form__element__label form__element__label-block">Ulica, numer domu i lokalu:*</label>
+							<input id="address" type="text" class="form__element__input">
+						</div>
+						<div class="form__element form__element-double">
+							<div class="form__element__label-block">
+								<label for="index" class="form__element__label">Kod pocztowy i </label>
+								<label for="city" class="form__element__label">miejscowość:*</label>
+							</div>
+							<div class="form__element__input-block">
+								<input id="index" type="text" class="form__element__input input__index" required>
+								<input id="city" type="text" class="form__element__input input__city" required>
+							</div>
+						</div>
+						<div class="form__element">
+							<label for="phone" class="form__element__label form__element__label-block">Telefon kontaktowy:*</label>
+							<div class="form__element__input-block">
+								<input id="phone" type="tel" class="form__element__input form__element__input-broad" required>
+								<p class="text__prescription text__mini">Potrzebny do ewentualnej weryfikacji zamówienia</p>
+							</div>
+						</div>
+						<div class="form__element">
+							<label for="email" class="form__element__label form__element__label-block">Adress e-mail:*</label>
+							<input id="email" type="email" class="form__element__input" required>
+						</div>
+						<div class="form__element">
+							<label for="country" class="form__element__label form__element__label-block">Kraj:*</label>
+							<select name="country" id="country" class="form__element__select">
+								<option value='AF'>Afganistan</option><option value='AL'>Albania</option><option value='DZ'>Algieria</option><option value='AD'>Andora</option><option value='AI'>Anguilla</option><option value='AG'>Antigua i Barbuda</option><option value='AN'>Antyle Holenderskie</option><option value='SA'>Arabia Saudyjska</option><option value='AR'>Argentyna</option><option value='AA'>Armenia</option><option value='AW'>Aruba</option><option value='AU'>Australia</option><option value='AT'>Austria</option><option value='AZ'>Azerbejdżan</option><option value='BS'>Bahamy</option><option value='BH'>Bahrajn</option><option value='BD'>Bangladesz</option><option value='BB'>Barbados</option><option value='BE'>Belgia</option><option value='BZ'>Belize</option><option value='BJ'>Benin</option><option value='BM'>Bermudy</option><option value='BT'>Bhutan</option><option value='BY'>Białoruś</option><option value='MM'>Birma</option><option value='BO'>Boliwia</option><option value='BW'>Botswana</option><option value='BA'>Bośnia i Hercegowina</option><option value='BR'>Brazylia</option><option value='BC'>British Indian Ocean Ter</option><option value='BN'>Brunei Darussalam</option><option value='BF'>Burkina Faso</option><option value='BI'>Burundi</option><option value='BG'>Bułgaria</option><option value='CL'>Chile</option><option value='CN'>Chiny</option><option value='HR'>Chorwacja</option><option value='CT'>Cote D'Ivoire</option><option value='CB'>Curacao</option><option value='CY'>Cypr</option><option value='TD'>Czad</option><option value='ME'>Czarnogóra</option><option value='CZ'>Czechy</option><option value='DK'>Dania</option><option value='CD'>Demokratyczna Republika Konga</option><option value='DM'>Dominika</option><option value='DJ'>Dżibuti</option><option value='EG'>Egipt</option><option value='EC'>Ekwador</option><option value='ER'>Erytrea</option><option value='EE'>Estonia</option><option value='ET'>Etiopia</option><option value='FA'>Falkland Islands</option><option value='FJ'>Fidżi</option><option value='PH'>Filipiny</option><option value='FI'>Finlandia</option><option value='FR'>Francja</option><option value='FS'>French Southern Ter</option><option value='GA'>Gabon</option><option value='GM'>Gambia</option><option value='GH'>Ghana</option><option value='GI'>Gibraltar</option><option value='GR'>Grecja</option><option value='GD'>Grenada</option><option value='GL'>Grenlandia</option><option value='GE'>Gruzja</option><option value='GU'>Guam</option><option value='GY'>Gujana</option><option value='GF'>Gujana Francuska</option><option value='GP'>Gwadelupa</option><option value='GT'>Gwatemala</option><option value='GN'>Gwinea</option><option value='GQ'>Gwinea Równikowa</option><option value='HT'>Haiti</option><option value='HW'>Hawaii</option><option value='ES'>Hiszpania</option><option value='NL'>Holandia</option><option value='HN'>Honduras</option><option value='HK'>Hongkong</option><option value='IN'>Indie</option><option value='ID'>Indonezja</option><option value='IQ'>Irak</option><option value='IR'>Iran</option><option value='IA'>Iran</option><option value='IE'>Irlandia</option><option value='IS'>Islandia</option><option value='IL'>Izrael</option><option value='JM'>Jamajka</option><option value='JP'>Japonia</option><option value='YE'>Jemen</option><option value='JO'>Jordania</option><option value='KY'>Kajmany</option><option value='KH'>Kambodża</option><option value='CM'>Kamerun</option><option value='CA'>Kanada</option><option value='QA'>Katar</option><option value='KZ'>Kazachstan</option><option value='KE'>Kenia</option><option value='KG'>Kirgistan</option><option value='KI'>Kiribati</option><option value='CO'>Kolumbia</option><option value='KM'>Komory</option><option value='CG'>Kongo</option><option value='KR'>Korea Południowa</option><option value='CR'>Kostaryka</option><option value='CU'>Kuba</option><option value='KW'>Kuwejt</option><option value='LA'>Laos</option><option value='LS'>Lesotho</option><option value='LB'>Liban</option><option value='LR'>Liberia</option><option value='LY'>Libia</option><option value='LI'>Liechtenstein</option><option value='LT'>Litwa</option><option value='LU'>Luksemburg</option><option value='MK'>Macedonia</option><option value='MG'>Madagaskar</option><option value='MO'>Makau</option><option value='MW'>Malawi</option><option value='MV'>Malediwy</option><option value='MY'>Malezja</option><option value='ML'>Mali</option><option value='MT'>Malta</option><option value='MA'>Maroko</option><option value='MQ'>Martynika</option><option value='MR'>Mauretania</option><option value='MU'>Mauritius</option><option value='MX'>Meksyk</option><option value='MI'>Midway Islands</option><option value='MC'>Monako</option><option value='MN'>Mongolia</option><option value='MS'>Montserrat</option><option value='MZ'>Mozambik</option><option value='MD'>Mołdawia</option><option value='NA'>Namibia</option><option value='NP'>Nepal</option><option value='NV'>Nevis</option><option value='DE'>Niemcy</option><option value='NE'>Niger</option><option value='NG'>Nigeria</option><option value='NI'>Nikaragua</option><option value='NU'>Niue</option><option value='NW'>Niue</option><option value='NF'>Norfolk</option><option value='NK'>North Korea</option><option value='NO'>Norwegia</option><option value='NC'>Nowa Kaledonia</option><option value='NZ'>Nowa Zelandia</option><option value='OM'>Oman</option><option value='PK'>Pakistan</option><option value='PW'>Palau</option><option value='PA'>Panama</option><option value='PG'>Papua Nowa Gwinea</option><option value='PY'>Paragwaj</option><option value='PE'>Peru</option><option value='PO'>Pitcairn Island</option><option value='PF'>Polinezja Francuska</option><option value='PL' selected='selected'>Polska</option><option value='PR'>Portoryko</option><option value='PT'>Portugalia</option><option value='DO'>Republika Dominikańska</option><option value='ZA'>Republika Południowej Afryki</option><option value='CV'>Republika Zielonego Przylądka</option><option value='CF'>RepublikaŚrodkowoafrykańska</option><option value='RE'>Reunion</option><option value='RU'>Rosja</option><option value='RO'>Rumunia</option><option value='RW'>Rwanda</option><option value='BL'>Saint Barthélemy</option><option value='KN'>Saint Kitts i Nevis</option><option value='LC'>Saint Lucia</option><option value='VC'>Saint Vincent i Grenadyny</option><option value='PM'>Saint-Pierre i Miquelon</option><option value='SP'>Saipan</option><option value='SV'>Salwador</option><option value='AS'>Samoa Amerykańskie</option><option value='SM'>San Marino</option><option value='SN'>Senegal</option><option value='RS'>Serbia</option><option value='SC'>Seszele</option><option value='SL'>Sierra Leone</option><option value='SG'>Singapur</option><option value='SO'>Somalia</option><option value='OI'>Somalia</option><option value='LK'>Sri Lanka</option><option value='NT'>St Barthelemy</option><option value='HE'>St Helena</option><option value='MB'>St Maarten</option><option value='US'>Stany Zjednoczone</option><option value='SZ'>Suazi</option><option value='SD'>Sudan</option><option value='SR'>Surinam</option><option value='SY'>Syria</option><option value='CH'>Szwajcaria</option><option value='SE'>Szwecja</option><option value='SK'>Słowacja</option><option value='SI'>Słowenia</option><option value='TJ'>Tadżykistan</option><option value='TH'>Tajlandia</option><option value='TW'>Tajwan</option><option value='TZ'>Tanzania</option><option value='PS'>Terytoria Palestyńskie</option><option value='TG'>Togo</option><option value='TK'>Tokelau</option><option value='TO'>Tonga</option><option value='TA'>Tristan da Cunha</option><option value='TT'>Trynidad i Tobago</option><option value='TN'>Tunezja</option><option value='TR'>Turcja</option><option value='TM'>Turkmenistan</option><option value='TU'>Turkmenistan</option><option value='TC'>Turks i Caicos</option><option value='TV'>Tuvalu</option><option value='UG'>Uganda</option><option value='UA'>Ukraina</option><option value='EU'>Unia Europejska</option><option value='UY'>Urugwaj</option><option value='UZ'>Uzbekistan</option><option value='VU'>Vanuatu</option><option value='VS'>Vatican City State</option><option value='VB'>Virgin Islands (Brit)</option><option value='WK'>Wake Island</option><option value='WF'>Wallis i Futuna</option><option value='VA'>Watykan</option><option value='VE'>Wenezuela</option><option value='GB'>Wielka Brytania</option><option value='VN'>Wietnam</option><option value='CI'>Wybrzeże Kości Słoniowej</option><option value='IM'>Wyspa Man</option><option value='CK'>Wyspy Cooka</option><option value='IC'>Wyspy Kanaryjskie</option><option value='CC'>Wyspy Kokosowe</option><option value='MH'>Wyspy Marshalla</option><option value='FO'>Wyspy Owcze</option><option value='SB'>Wyspy Salomona</option><option value='ST'>WyspyŚwiętego Tomasza i Książęca</option><option value='HU'>Węgry</option><option value='IT'>Włochy</option><option value='ZR'>Zaire</option><option value='ZM'>Zambia</option><option value='ZW'>Zimbabwe</option><option value='AE'>Zjednoczone Emiraty Arabskie</option><option value='LV'>Łotwa</option>
+							</select>
+						</div>
+						<div class="form__element">
+							<label for="language" class="form__element__label form__element__label-block">Język*</label>
+							<select name="language" id="language" class="form__element__select">
+								<option value="en">Angielski</option>
+		    			        <option value="zh">Chiński</option>
+		    			        <option value="cs">Czeski</option>
+		    			        <option value="da">Duński</option>
+		    			        <option value="fr">Francuski</option>
+		    			        <option value="el">Grecki</option>
+		    			        <option value="es">Hiszpański</option>
+		    			        <option value="nl">Holenderski</option>
+		    			        <option value="no">Norweski</option>
+		    			        <option value="de">Niemiecki</option>
+		    			        <option value="sk">Słowacki</option>
+		    			        <option value="sv">Szwedzki</option>
+		    			        <option value="pt">Portugalski</option>
+		    			        <option value="ru">Rosyjski</option>
+		    			        <option value="it">Włoski</option>
+			                </select>
+						</div>
+						<div class="form__button">
+			                <button id="sbutton" class="form__button__link">
+			                  <div class="text__regular text__bold">Zamawiam</div>
+			                  <div class="text__mini">moja decyzja jest w 100% bezpieczna</div>
+			                </button>
+                		</div>
+					</form>
+				</div>
+			</main>			
+		</div>
+	</body>
+</html>
