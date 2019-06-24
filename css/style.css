@@ -7,16 +7,19 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+.top {
+	background-color: rgb(30, 170, 206);
+}
+
 .top__slogan {
 	color: rgb(255, 255, 255);
 	text-align: center;
-	background-color: rgb(30, 170, 206);
 	height: 32px;
 	padding: 2px 10px;
 }
 
 header {
-	background-color: rgb(244, 244, 244);
+	background-color: rgb(245, 244, 244);
 }
 
 .header__content {
